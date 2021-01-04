@@ -3,9 +3,8 @@ package simplest.possible.implementation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static java.util.Collections.emptyList;
+import static java.util.OptionalDouble.of;
 
 public class PrimeFactorsTest {
     @Test
@@ -15,6 +14,6 @@ public class PrimeFactorsTest {
 
     @Test
     void primeFactorOf2Is2Itself() {
-        Assertions.assertEquals(List.of(2), new PrimeFactors().of(2));
+        Assertions.assertEquals(of(2), new PrimeFactors().of(2));
     }
 }
